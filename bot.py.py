@@ -1,17 +1,7 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import logging
 logging.basicConfig(level=logging.DEBUG,format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger()
 print(logger.setLevel(logging.INFO))
-
-
-# In[ ]:
-
 
 from telegram.ext import Updater#this is used to start updater which has a job of a polling server
 from telegram.ext import CommandHandler,MessageHandler,Filters#this is picked up from github doc diff from cb
@@ -55,16 +45,3 @@ def error(bot, update, error):
     
 if __name__=="__main__":
     main()
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
